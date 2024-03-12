@@ -1,0 +1,17 @@
+﻿@model prjFactoryConsole.IBurger
+
+@{
+    ViewData["Title"] = "BurgerView";
+}
+
+<div>
+    <h1>@ViewBag.Name</h1>
+    <img src="@ViewBag.img" height="500" width="500"/>
+    <p>Patty: @ViewBag.Patty</p>
+    <p>Condiments: @ViewBag.Condiments</p>
+    <p>Sauce: @ViewBag.Sauce</p>
+    <p>Price: @ViewBag.Price</p>
+    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="PaymentComplete">
+        <button>Buy</button>
+    </a>
+</div>

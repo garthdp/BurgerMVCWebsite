@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Enter Burger";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Enter the type of burger you want to eat.</p>
+<br />
+<div class="row">
+    <div class="col-md-4">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="border" href="BurgerView">
+            <p>Plain Burger</p>
+            <a id="Plain" href="@Url.Action("Details", "Home", new { id = "plain" })">
+                <img src="https://www.provisioneronline.com/ext/resources/2022/03/0322NP_burgerreport_openimage.jpg?height=418&t=1647884382&width=800" width="150" height="150" id="imgChicken" />
+            </a>
+        </div>
+        <div class="border" href="">
+            <p>Chicken Burger</p>
+            <a id="Plain" href="@Url.Action("Details", "Home", new { id = "chicken" })">
+                <img src="https://www.familychicken.nl/wp-content/uploads/2019/12/549-Royal-Crunchy-Filetburger-Los-500x500-1.png" width="150" height="150" id="imgChicken" />
+            </a>
+        </div>
+        <div class="border" href="">
+            <p>Cheese Burger</p>
+            <a id="Plain" href="@Url.Action("Details", "Home", new { id = "cheese" })">
+                <img src="https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/tgpbaezf/8cd1627b-621a-4155-858f-d9c8e69a81fa.gif" width="150" height="150" id="imgChicken" />
+            </a>
+        </div>
+        <div class="border" href="">
+            <p>Fish Burger</p>
+            <a id="Plain" href="@Url.Action("Details", "Home", new { id = "fish" })">
+                <img src="https://www.thedinnerbite.com/wp-content/uploads/2021/04/fish-burger-filet-recipe-img-12-500x500.jpg" width="150" height="150" id="imgChicken" />
+            </a>
+        </div>
+    </div>
+</div>
